@@ -15,9 +15,13 @@ cliente.endereços = [
 ];
 
 cliente.endereços.push({
-    rua: "R. Joseph Climber",
+    rua: "R. Joseph Climber",         
     numero: 404,
     apartamento: false,
 })
 
-console.log(cliente.endereços);
+const listaApenasApartamentos = cliente.endereços.filter(
+    (endereço) =>endereço.apartamento === true
+);
+
+console.log(listaApenasApartamentos);
